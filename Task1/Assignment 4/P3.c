@@ -10,7 +10,10 @@ int main(){
         if (str1[i] == str2[j])
         {flag = 1;}
         else
-        {flag = 0;}
+        {
+            flag = 0;
+            break;
+        }
     }
     if (flag == 0){printf("Both Strings Are Not Equal!");}
     else {printf("Both Strings Are Equal!");}
