@@ -6,11 +6,14 @@ int main(){
     gets(str1);
     printf("Enter String2: ");
     gets(str2);
-    for (int i = 0, j = 0; str1[i] != '\0', str2[j] != '\0'; i++, j++){
-        if (str1[i] == str2[j])
+    for (int i = 0; str1[i] != '\0'&& str2[i] != '\0'; i++){
+        if (str1[i] == str2[i])
         {flag = 1;}
         else
-        {flag = 0;}
+        {
+        flag = 0;
+        break;
+        }
     }
     if (flag == 0){printf("Both Strings Are Not Equal!");}
     else {printf("Both Strings Are Equal!");}
