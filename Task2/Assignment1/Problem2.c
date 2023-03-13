@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int x = 0x3E2;
+    int x = 0x116BCA;
     int * ptr ;
     ptr = &x;
     printf("%p\n",ptr);
