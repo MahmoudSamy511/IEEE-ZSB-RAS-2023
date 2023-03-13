@@ -1,4 +1,4 @@
-
+#include "Function.c"
 #include <stdio.h>
 extern void helloFun(); //importing function from Funtion.c file
 
@@ -15,7 +15,7 @@ int main(){
     //printf("%p",&val2); 
     //  Error because thats a register variable which stored in CPU not in memory and we cant access his address
     
-    //helloFun();
+    helloFun();
     
     func();
     func();
