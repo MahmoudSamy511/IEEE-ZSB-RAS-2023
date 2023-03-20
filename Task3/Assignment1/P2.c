@@ -10,7 +10,7 @@ struct student_info
 void stud_fun(struct student_info s[15]){
     int count =0;
     printf("Displaying Students information\n");
-    for(int i = 1; i<4 ;i++){
+    for(int i = 1; i<16 ;i++){
         printf("Student %d Roll Number : %d \n",i,s[i].roll_number);
         printf("Student %d Name : %s \n",i,s[i].name);
         printf("Student %d Age : %d\n",i,s[i].age);
