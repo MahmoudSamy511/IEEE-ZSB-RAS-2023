@@ -115,5 +115,12 @@ int main(){
     printf("Size of struct :%d bytes",sizeof(student));
     /*Size of struct equals to [8+8+8 = 24 bytes]*/
 
+    /*We cannot use bit field with pointers because
+     an address could include more than one member*/
+     
+     /*We cannot use bit field arrays.
+     and C does not support arrays of bit-fields
+     Bit field can only be used with integral type variables.*/
+
     return 0;
 }
