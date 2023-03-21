@@ -41,8 +41,8 @@ void Descending_order(){
         printf("%d, ",arr[i]);
     }
 }
-#endif
-#ifndef Function
+
+#else
     #warning "Please define the order"
 #endif
 
