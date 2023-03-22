@@ -1,6 +1,5 @@
 #include<stdio.h>
 #define Function Ascending_order
-#ifdef Function
 void Ascending_order(){
     int arr [5] ,temp;
     for(int i=0;i<5;i++){
@@ -42,11 +41,13 @@ void Descending_order(){
     }
 }
 
-#else
-    #warning "Please define the order"
-#endif
+
 
 int main(){
+    #ifdef Function
     Function();
+    #else
+    #warning "Please define the order"
+#endif
     return 0;
 }
