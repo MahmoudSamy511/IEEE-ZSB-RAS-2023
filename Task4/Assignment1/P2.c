@@ -12,13 +12,13 @@ void addComplex(complex n1,complex n2){
         printf("Sum of two complex num : %d - %di ",res.real,-res.imag);
 
     }else{
-        printf("Sum of two complex num : %d + %di ",rpart,ipart);
+        printf("Sum of two complex num : %d + %di ",res.real,res.imag);
         
     }
     
 }
 int main(){
-    complex num1 ={10,-5};
+    complex num1 ={10,5};
     complex num2 ={5,-1};
     addComplex(num1,num2);
 
