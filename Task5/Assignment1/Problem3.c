@@ -15,7 +15,7 @@ int main(){
     int freq[256] = {0}, max_freq = 0, i;
     for(i = 0; name[i] != '\0'; i++)
     {
-        freq[name[i]]++;
+        freq[(int)name[i]]++;
     }
     for(i = 0; i < 256; i++)
     {
