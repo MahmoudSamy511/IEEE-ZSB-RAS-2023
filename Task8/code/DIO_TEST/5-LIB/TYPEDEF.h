@@ -1,0 +1,20 @@
+#ifndef  TYPEDEF_H
+#define  TYPEDEF_H
+
+typedef unsigned char       u8 ;
+typedef unsigned short int  u16;
+typedef unsigned long int   u32;
+
+typedef signed char         s8;
+typedef signed short int    s16;
+typedef unsigned long int   s32;
+
+typedef float               f32;
+typedef double              f64;
+
+#define SATE_OK             1
+#define SATE_NOT_OK         0
+
+#define NULL               ((void *)0)
+
+#endif
