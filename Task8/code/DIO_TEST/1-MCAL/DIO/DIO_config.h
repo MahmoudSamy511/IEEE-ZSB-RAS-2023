@@ -47,8 +47,8 @@
 #define DIO_U8_PD7_INITIAL_DIRECTION                    DIO_U8_INITIAL_INPUT
 /*Initial Values For All Pins*/
 /*Options: DIO_U8_OUTPUT_HIGH
-           DIO_U8_OUTPIT_LOW
-           DDIO_U8_INPUT_FLOATING
+           DIO_U8_OUTPUT_LOW
+           DIO_U8_INPUT_FLOATING
            DIO_U8_INPUT_PULLUP
            */
 /*PORTA*/

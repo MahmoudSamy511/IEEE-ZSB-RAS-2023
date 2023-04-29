@@ -8,7 +8,6 @@
 #include"../../5-LIB/TYPEDEF.h"
 #include"../../5-LIB/BIT_MATH.h"
 /*MCAL*/
-#include"DIO_interface.h"
 #include"DIO_private.h"
 #include"DIO_config.h"
 

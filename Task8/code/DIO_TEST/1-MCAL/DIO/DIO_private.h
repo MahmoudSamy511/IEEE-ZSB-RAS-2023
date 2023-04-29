@@ -7,7 +7,31 @@
 #ifndef DIO_PRIVATE_H
 #define DIO_PRIVATE_H
 #include"../../5-LIB/TYPEDEF.h"
+/*Macros for PORTS*/
+#define DIO_U8_PORTA     0
+#define DIO_U8_PORTB     1
+#define DIO_U8_PORTC     2
+#define DIO_U8_PORTD     3
 
+/*Macros for PINS*/
+#define DIO_U8_PIN0      0
+#define DIO_U8_PIN1      1
+#define DIO_U8_PIN2      2
+#define DIO_U8_PIN3      3
+#define DIO_U8_PIN4      4
+#define DIO_U8_PIN5      5
+#define DIO_U8_PIN6      6
+#define DIO_U8_PIN7      7
+
+/*Macros for Pin Direction*/
+#define DIO_U8_INPUT     0
+#define DIO_U8_OUTPUT    1
+
+/*Macros for Pin Value*/
+#define DIO_U8_LOW       0
+#define DIO_U8_HIGH      1
+
+/*Macros for Registers*/
 #define DIO_U8_PORTA_REG  *((volatile u8*)0x3B)
 #define DIO_U8_DDRA_REG   *((volatile u8*)0x3A)
 #define DIO_U8_PINA_REG   *((volatile u8*)0x39)
@@ -27,12 +51,14 @@
 /*Macros For Pins Direction*/
 #define DIO_U8_INITIAL_INPUT    0
 #define DIO_U8_INITIAL_OUTPUT   1
+
 /*Macros For Pins Values*/
 #define DIO_U8_OUTPUT_LOW       0
 #define DIO_U8_OUTPUT_HIGH      1
 #define DIO_U8_INPUT_FLOATING   0
 #define DIO_U8_INPUT_PULLUP     1
 
+/*Function to concatenate pin values*/
 #define Conc(b7,b6,b5,b4,b3,b2,b1,b0)          Conc_Help(b7,b6,b5,b4,b3,b2,b1,b0)
 #define Conc_Help(b7,b6,b5,b4,b3,b2,b1,b0)     0b##b7##b6##b5##b4##b3##b2##b1##b0
 
