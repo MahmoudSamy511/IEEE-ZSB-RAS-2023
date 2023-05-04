@@ -113,7 +113,7 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xac2
+.text           0x00000000      0xa14
  *(.vectors)
  .vectors       0x00000000       0x54 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -191,35 +191,35 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
  .text          0x0000006c        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
                 0x0000006c                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x0000006c       0xb8 ./4-APP/main.o
+ .text.main     0x0000006c       0xb4 ./4-APP/main.o
                 0x0000006c                main
- .text.DIO_void_Init
-                0x00000124       0x3e ./1-MCAL/DIO/DIO_program.o
-                0x00000124                DIO_void_Init
- .text.DIO_u8_SetPinDirection
-                0x00000162      0x254 ./1-MCAL/DIO/DIO_program.o
-                0x00000162                DIO_u8_SetPinDirection
- .text.DIO_u8_SetPinValue
-                0x000003b6      0x254 ./1-MCAL/DIO/DIO_program.o
-                0x000003b6                DIO_u8_SetPinValue
- .text.DIO_u8_GetPinValue
-                0x0000060a      0x17c ./1-MCAL/DIO/DIO_program.o
-                0x0000060a                DIO_u8_GetPinValue
- .text.DIO_u8_SetPortDirection
-                0x00000786      0x142 ./1-MCAL/DIO/DIO_program.o
-                0x00000786                DIO_u8_SetPortDirection
- .text.DIO_u8_SetPortValue
-                0x000008c8      0x142 ./1-MCAL/DIO/DIO_program.o
-                0x000008c8                DIO_u8_SetPortValue
- .text.DIO_u8_GetPortValue
-                0x00000a0a       0xb4 ./1-MCAL/DIO/DIO_program.o
-                0x00000a0a                DIO_u8_GetPortValue
- .text.libgcc   0x00000abe        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00000abe                . = ALIGN (0x2)
+ .text.DIO_enu_Init
+                0x00000120       0x40 ./1-MCAL/DIO/DIO_program.o
+                0x00000120                DIO_enu_Init
+ .text.DIO_enu_SetPinDirection
+                0x00000160      0x254 ./1-MCAL/DIO/DIO_program.o
+                0x00000160                DIO_enu_SetPinDirection
+ .text.DIO_enu_SetPinValue
+                0x000003b4      0x254 ./1-MCAL/DIO/DIO_program.o
+                0x000003b4                DIO_enu_SetPinValue
+ .text.DIO_enu_GetPinValue
+                0x00000608      0x17c ./1-MCAL/DIO/DIO_program.o
+                0x00000608                DIO_enu_GetPinValue
+ .text.DIO_enu_SetPortDirection
+                0x00000784      0x142 ./1-MCAL/DIO/DIO_program.o
+                0x00000784                DIO_enu_SetPortDirection
+ .text.DIO_enu_SetPortValue
+                0x000008c6       0x96 ./1-MCAL/DIO/DIO_program.o
+                0x000008c6                DIO_enu_SetPortValue
+ .text.DIO_enu_GetPortValue
+                0x0000095c       0xb4 ./1-MCAL/DIO/DIO_program.o
+                0x0000095c                DIO_enu_GetPortValue
+ .text.libgcc   0x00000a10        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000a10                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000abe        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00000abe                exit
-                0x00000abe                _exit
+ .fini9         0x00000a10        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000a10                exit
+                0x00000a10                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -238,11 +238,11 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000abe        0x4 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000a10        0x4 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000ac2                _etext = .
+                0x00000a14                _etext = .
 
-.data           0x00800060        0x0 load address 0x00000ac2
+.data           0x00800060        0x0 load address 0x00000a14
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -267,8 +267,8 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
  *(.bss*)
  *(COMMON)
                 0x00800060                PROVIDE (__bss_end, .)
-                0x00000ac2                __data_load_start = LOADADDR (.data)
-                0x00000ac2                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000a14                __data_load_start = LOADADDR (.data)
+                0x00000a14                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800060        0x0
                 0x00800060                PROVIDE (__noinit_start, .)
@@ -293,15 +293,15 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
 .signature
  *(.signature*)
 
-.stab           0x00000000      0xb34
+.stab           0x00000000      0xb40
  *(.stab)
- .stab          0x00000000      0x288 ./4-APP/main.o
- .stab          0x00000288      0x8ac ./1-MCAL/DIO/DIO_program.o
-                                0x8b8 (size before relaxing)
+ .stab          0x00000000      0x2b8 ./4-APP/main.o
+ .stab          0x000002b8      0x888 ./1-MCAL/DIO/DIO_program.o
+                                0x894 (size before relaxing)
 
-.stabstr        0x00000000      0x5ce
+.stabstr        0x00000000      0x697
  *(.stabstr)
- .stabstr       0x00000000      0x5ce ./4-APP/main.o
+ .stabstr       0x00000000      0x697 ./4-APP/main.o
 
 .stab.excl
  *(.stab.excl)

@@ -58,6 +58,11 @@
 #define DIO_U8_INPUT_FLOATING   0
 #define DIO_U8_INPUT_PULLUP     1
 
+/*Macros For Port Direction*/
+#define DIO_U8_SETPORT_OUTPUT     0xff
+#define DIO_U8_SETPORT_INPUT      0x00
+
+
 /*Function to concatenate pin values*/
 #define Conc(b7,b6,b5,b4,b3,b2,b1,b0)          Conc_Help(b7,b6,b5,b4,b3,b2,b1,b0)
 #define Conc_Help(b7,b6,b5,b4,b3,b2,b1,b0)     0b##b7##b6##b5##b4##b3##b2##b1##b0

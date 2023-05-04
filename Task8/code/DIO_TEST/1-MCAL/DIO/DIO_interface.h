@@ -8,6 +8,7 @@
 #define DIO_INTERFACE_H
 
 #include"../../5-LIB/TYPEDEF.h"
+#include"../../5-LIB/ERROR_STATE.h"
 
 /*Macros for PORTS*/
 #define DIO_U8_PORTA     0
@@ -34,19 +35,19 @@
 #define DIO_U8_HIGH      1
 
 /*Functions Prototypes*/
-void DIO_void_Init           (void);
+ES_t DIO_enu_Init           	(void);
 
-u8 DIO_u8_SetPinDirection    (u8 Copy_u8_PortId, u8 Copy_u8_PinId,u8 Copy_u8_PinDirection);
+ES_t DIO_enu_SetPinDirection    (u8 Copy_u8_PortId, u8 Copy_u8_PinId,u8 Copy_u8_PinDirection);
 
-u8 DIO_u8_SetPinValue        (u8 Copy_u8_PortId, u8 Copy_u8_PinId,u8 Copy_u8_PinValue);
+ES_t DIO_enu_SetPinValue        (u8 Copy_u8_PortId, u8 Copy_u8_PinId,u8 Copy_u8_PinValue);
 
-u8 DIO_u8_GetPinValue        (u8 Copy_u8_PortId, u8 Copy_u8_PinId,u8 * Copy_pu8_ReturnPinValue);
+ES_t DIO_enu_GetPinValue        (u8 Copy_u8_PortId, u8 Copy_u8_PinId,u8 * Copy_pu8_ReturnPinValue);
 
-u8 DIO_u8_SetPortDirection   (u8 Copy_u8_PortId, u8 Copy_u8_PortDirection);
+ES_t DIO_enu_SetPortDirection   (u8 Copy_u8_PortId, u8 Copy_u8_PortDirection);
 
-u8 DIO_u8_SetPortValue       (u8 Copy_u8_PortId, u8 Copy_u8_PortValue);
+ES_t DIO_enu_SetPortValue       (u8 Copy_u8_PortId, u8 Copy_u8_PortValue);
 
-u8 DIO_u8_GetPortValue       (u8 Copy_u8_PortId, u8 * Copy_u8_ReturnPortValue);
+ES_t DIO_enu_GetPortValue       (u8 Copy_u8_PortId, u8 * Copy_u8_ReturnPortValue);
 
 
 #endif
