@@ -9,6 +9,11 @@
 #include"../5-LIB/TYPEDEF.h"
 #define F_CPU 8000000UL
 #include <util/delay.h>
+#define HEART  0
+#define ALIEN  1
+#define SOUND  2
+#define LOCK   3
+#define NUM_OF_COLUMNS 16
 int main(void){
 DIO_enu_Init();
 LCD_enu_Init();
@@ -33,23 +38,23 @@ while(1){
 	_delay_ms(25);
 	if(switch1_read){
 		counter++;
-		LCD_enu_SendChar(0);
+		LCD_enu_SendChar(HEART);
 	}else if(switch2_read){
 		counter++;
-		LCD_enu_SendChar(1);
+		LCD_enu_SendChar(ALIEN);
 	}else if(switch3_read){
 		counter++;
-		LCD_enu_SendChar(2);
+		LCD_enu_SendChar(SOUND);
 	}
 	else if(switch4_read){
 		counter++;
-		LCD_enu_SendChar(3);
+		LCD_enu_SendChar(LOCK);
 		}
 	/*check for end of line1*/
-	if(counter == 17)
+	if(counter == (NUM_OF_COLUMNS + 1))
 		LCD_enu_SetCursor(1,0);
 	/*check for end of screen*/
-	else if(counter == 34)
+	else if(counter == (NUM_OF_COLUMNS + 1)*2)
 		LCD_enu_Clear();
 }
 
