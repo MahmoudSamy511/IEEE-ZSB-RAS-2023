@@ -101,19 +101,21 @@ ES_t LCD_enu_SendString(u8 * Copy_pu8_String){
 }
 
 ES_t LCD_enu_SendNum(u32 Copy_u32_Num){
-    u8 Local_u8_Reminder ;
-    u8 Local_u8_ReverseNum = 0;
-    while(Copy_u32_Num != 0){
-        Local_u8_Reminder = Copy_u32_Num % 10;
-        Local_u8_ReverseNum = Local_u8_ReverseNum * 10 + Local_u8_Reminder;
-        Copy_u32_Num /= 10;
-    }
-    while(Local_u8_ReverseNum != 0){
-        LCD_enu_SendChar((Local_u8_ReverseNum % 10)+'0');
-        Local_u8_ReverseNum /= 10;
+    u8 Local_u8_numArr[10] ,Local_u8_iterator1 = 0 ;
+    s8 Local_u8_iterator2 = 0;
+    if(Copy_u32_Num == 0)
+    	LCD_enu_SendChar('0');
+    else{
+		while(Copy_u32_Num != 0){
+			Local_u8_numArr[Local_u8_iterator1] = Copy_u32_Num % 10  ;
+			Copy_u32_Num /= 10;
+			Local_u8_iterator1++;
+		}
+		for(Local_u8_iterator2 = Local_u8_iterator1-1 ;Local_u8_iterator2>=0;Local_u8_iterator2--){
+			LCD_enu_SendChar(Local_u8_numArr[Local_u8_iterator2]+'0');
+		}
     }
     return SATE_OK;
-
 }
 ES_t LCD_enu_SetCursor(u8 Copy_u8_LineNum,u8 Copy_u8_Location){
     if(Copy_u8_Location<=39){

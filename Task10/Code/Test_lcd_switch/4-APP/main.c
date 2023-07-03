@@ -54,8 +54,10 @@ while(1){
 	if(counter == (NUM_OF_COLUMNS + 1))
 		LCD_enu_SetCursor(1,0);
 	/*check for end of screen*/
-	else if(counter == (NUM_OF_COLUMNS + 1)*2)
+	else if(counter == (NUM_OF_COLUMNS + 1)*2){
+		counter = 0;
 		LCD_enu_Clear();
+	}
 }
 
 
