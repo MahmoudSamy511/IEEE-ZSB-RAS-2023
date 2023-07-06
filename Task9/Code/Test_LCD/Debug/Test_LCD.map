@@ -1,7 +1,5 @@
 Archive member included because of file (symbol)
 
-d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
-                              ./2-HAL/LCD/LCD_Program.o (__udivmodqi4)
 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
                               ./2-HAL/LCD/LCD_Program.o (__udivmodsi4)
 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
@@ -148,7 +146,7 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2156
+.text           0x00000000     0x22e8
  *(.vectors)
  .vectors       0x00000000       0x54 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -226,7 +224,6 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
  .text          0x00000082        0x0 ./4-APP/main.o
  .text          0x00000082        0x0 ./2-HAL/LCD/LCD_Program.o
  .text          0x00000082        0x0 ./1-MCAL/DIO/DIO_program.o
- .text          0x00000082        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
  .text          0x00000082        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
  .text          0x00000082        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  .text          0x00000082        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
@@ -258,65 +255,66 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
                 0x00000bdc                __fpcmp_parts_f
                 0x00000c8e                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000c8e       0x3a ./4-APP/main.o
+ .text.main     0x00000c8e       0x3e ./4-APP/main.o
                 0x00000c8e                main
  .text.LCD_enu_SendCmnd
-                0x00000cc8      0x1d6 ./2-HAL/LCD/LCD_Program.o
-                0x00000cc8                LCD_enu_SendCmnd
+                0x00000ccc      0x400 ./2-HAL/LCD/LCD_Program.o
+                0x00000ccc                LCD_enu_SendCmnd
  .text.LCD_enu_SendChar
-                0x00000e9e      0x1d6 ./2-HAL/LCD/LCD_Program.o
-                0x00000e9e                LCD_enu_SendChar
+                0x000010cc      0x400 ./2-HAL/LCD/LCD_Program.o
+                0x000010cc                LCD_enu_SendChar
  .text.LCD_enu_SendString
-                0x00001074       0x52 ./2-HAL/LCD/LCD_Program.o
-                0x00001074                LCD_enu_SendString
+                0x000014cc       0x52 ./2-HAL/LCD/LCD_Program.o
+                0x000014cc                LCD_enu_SendString
  .text.LCD_enu_SendNum
-                0x000010c6       0xc8 ./2-HAL/LCD/LCD_Program.o
-                0x000010c6                LCD_enu_SendNum
+                0x0000151e       0xee ./2-HAL/LCD/LCD_Program.o
+                0x0000151e                LCD_enu_SendNum
  .text.LCD_enu_SetCursor
-                0x0000118e       0x6a ./2-HAL/LCD/LCD_Program.o
-                0x0000118e                LCD_enu_SetCursor
+                0x0000160c       0x6a ./2-HAL/LCD/LCD_Program.o
+                0x0000160c                LCD_enu_SetCursor
  .text.LCD_enu_Init
-                0x000011f8      0x588 ./2-HAL/LCD/LCD_Program.o
-                0x000011f8                LCD_enu_Init
+                0x00001676      0x130 ./2-HAL/LCD/LCD_Program.o
+                0x00001676                LCD_enu_Init
  .text.LCD_enu_Clear
-                0x00001780       0x16 ./2-HAL/LCD/LCD_Program.o
-                0x00001780                LCD_enu_Clear
+                0x000017a6      0x112 ./2-HAL/LCD/LCD_Program.o
+                0x000017a6                LCD_enu_Clear
+ .text.LCD_enu_CreateCustomChar
+                0x000018b8       0x82 ./2-HAL/LCD/LCD_Program.o
+                0x000018b8                LCD_enu_CreateCustomChar
  .text.DIO_enu_Init
-                0x00001796       0x42 ./1-MCAL/DIO/DIO_program.o
-                0x00001796                DIO_enu_Init
+                0x0000193a       0x48 ./1-MCAL/DIO/DIO_program.o
+                0x0000193a                DIO_enu_Init
  .text.DIO_enu_SetPinDirection
-                0x000017d8      0x254 ./1-MCAL/DIO/DIO_program.o
-                0x000017d8                DIO_enu_SetPinDirection
+                0x00001982      0x254 ./1-MCAL/DIO/DIO_program.o
+                0x00001982                DIO_enu_SetPinDirection
  .text.DIO_enu_SetPinValue
-                0x00001a2c      0x254 ./1-MCAL/DIO/DIO_program.o
-                0x00001a2c                DIO_enu_SetPinValue
+                0x00001bd6      0x254 ./1-MCAL/DIO/DIO_program.o
+                0x00001bd6                DIO_enu_SetPinValue
  .text.DIO_enu_GetPinValue
-                0x00001c80      0x17c ./1-MCAL/DIO/DIO_program.o
-                0x00001c80                DIO_enu_GetPinValue
+                0x00001e2a      0x17c ./1-MCAL/DIO/DIO_program.o
+                0x00001e2a                DIO_enu_GetPinValue
  .text.DIO_enu_SetPortDirection
-                0x00001dfc      0x142 ./1-MCAL/DIO/DIO_program.o
-                0x00001dfc                DIO_enu_SetPortDirection
+                0x00001fa6      0x142 ./1-MCAL/DIO/DIO_program.o
+                0x00001fa6                DIO_enu_SetPortDirection
  .text.DIO_enu_SetPortValue
-                0x00001f3e       0x96 ./1-MCAL/DIO/DIO_program.o
-                0x00001f3e                DIO_enu_SetPortValue
+                0x000020e8       0x96 ./1-MCAL/DIO/DIO_program.o
+                0x000020e8                DIO_enu_SetPortValue
  .text.DIO_enu_GetPortValue
-                0x00001fd4       0xb4 ./1-MCAL/DIO/DIO_program.o
-                0x00001fd4                DIO_enu_GetPortValue
- .text.libgcc   0x00002088       0x18 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
-                0x00002088                __udivmodqi4
- .text.libgcc   0x000020a0       0x44 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x000020a0                __udivmodsi4
- .text.libgcc   0x000020e4        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000020e4        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000020e4       0x38 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x000020e4                __prologue_saves__
- .text.libgcc   0x0000211c       0x36 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x0000211c                __epilogue_restores__
-                0x00002152                . = ALIGN (0x2)
+                0x0000217e       0xb4 ./1-MCAL/DIO/DIO_program.o
+                0x0000217e                DIO_enu_GetPortValue
+ .text.libgcc   0x00002232       0x44 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002232                __udivmodsi4
+ .text.libgcc   0x00002276        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002276        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002276       0x38 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00002276                __prologue_saves__
+ .text.libgcc   0x000022ae       0x36 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000022ae                __epilogue_restores__
+                0x000022e4                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002152        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00002152                exit
-                0x00002152                _exit
+ .fini9         0x000022e4        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000022e4                exit
+                0x000022e4                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -335,82 +333,80 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002152        0x4 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x000022e4        0x4 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002156                _etext = .
+                0x000022e8                _etext = .
 
-.data           0x00800060       0x24 load address 0x00002156
+.data           0x00800060       0x20 load address 0x000022e8
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
- .data          0x00800060       0x1b ./4-APP/main.o
- .data          0x0080007b        0x0 ./2-HAL/LCD/LCD_Program.o
- .data          0x0080007b        0x0 ./1-MCAL/DIO/DIO_program.o
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .data          0x0080007b        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .data          0x0080007b        0x8 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
-                0x0080007b                __thenan_sf
- .data          0x00800083        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .data          0x00800083        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .data          0x00800083        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .data          0x00800083        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .data          0x00800083        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x00800060       0x17 ./4-APP/main.o
+ .data          0x00800077        0x0 ./2-HAL/LCD/LCD_Program.o
+ .data          0x00800077        0x0 ./1-MCAL/DIO/DIO_program.o
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .data          0x00800077        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x00800077        0x8 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x00800077                __thenan_sf
+ .data          0x0080007f        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x0080007f        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x0080007f        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x0080007f        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x0080007f        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x00800084                . = ALIGN (0x2)
- *fill*         0x00800083        0x1 00
-                0x00800084                _edata = .
-                0x00800084                PROVIDE (__data_end, .)
+                0x00800080                . = ALIGN (0x2)
+ *fill*         0x0080007f        0x1 00
+                0x00800080                _edata = .
+                0x00800080                PROVIDE (__data_end, .)
 
-.bss            0x00800084        0x0
-                0x00800084                PROVIDE (__bss_start, .)
+.bss            0x00800080        0x0
+                0x00800080                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
- .bss           0x00800084        0x0 ./4-APP/main.o
- .bss           0x00800084        0x0 ./2-HAL/LCD/LCD_Program.o
- .bss           0x00800084        0x0 ./1-MCAL/DIO/DIO_program.o
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .bss           0x00800084        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800080        0x0 ./4-APP/main.o
+ .bss           0x00800080        0x0 ./2-HAL/LCD/LCD_Program.o
+ .bss           0x00800080        0x0 ./1-MCAL/DIO/DIO_program.o
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x00800080        0x0 d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
  *(.bss*)
  *(COMMON)
-                0x00800084                PROVIDE (__bss_end, .)
-                0x00002156                __data_load_start = LOADADDR (.data)
-                0x0000217a                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800080                PROVIDE (__bss_end, .)
+                0x000022e8                __data_load_start = LOADADDR (.data)
+                0x00002308                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800084        0x0
-                0x00800084                PROVIDE (__noinit_start, .)
+.noinit         0x00800080        0x0
+                0x00800080                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800084                PROVIDE (__noinit_end, .)
-                0x00800084                _end = .
-                0x00800084                PROVIDE (__heap_start, .)
+                0x00800080                PROVIDE (__noinit_end, .)
+                0x00800080                _end = .
+                0x00800080                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -428,17 +424,17 @@ LOAD d:/courses/embedded data/00-tools/03-imt sdk/03- imt sdk/03- imt sdk/imt_sd
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x171c
+.stab           0x00000000     0x18fc
  *(.stab)
  .stab          0x00000000      0x210 ./4-APP/main.o
- .stab          0x00000210      0xc84 ./2-HAL/LCD/LCD_Program.o
-                                0xc90 (size before relaxing)
- .stab          0x00000e94      0x888 ./1-MCAL/DIO/DIO_program.o
+ .stab          0x00000210      0xe64 ./2-HAL/LCD/LCD_Program.o
+                                0xe70 (size before relaxing)
+ .stab          0x00001074      0x888 ./1-MCAL/DIO/DIO_program.o
                                 0x894 (size before relaxing)
 
-.stabstr        0x00000000      0xce2
+.stabstr        0x00000000      0xd6c
  *(.stabstr)
- .stabstr       0x00000000      0xce2 ./4-APP/main.o
+ .stabstr       0x00000000      0xd6c ./4-APP/main.o
 
 .stab.excl
  *(.stab.excl)
