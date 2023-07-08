@@ -25,7 +25,7 @@
 /*Options for Mode: 1- LCD_U8_MODE_8BIT
                     2- LCD_U8_MODE_4BIT */
 
-#define LCD_U8_MODE             LCD_U8_MODE_8BIT
+#define LCD_U8_MODE             LCD_U8_MODE_4BIT
 
 #define LCD_U8_RS_PORT          DIO_U8_PORTA
 #define LCD_U8_RW_PORT          DIO_U8_PORTA

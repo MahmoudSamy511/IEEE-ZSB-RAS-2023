@@ -147,23 +147,13 @@ ES_t LCD_enu_Init(void){
     LCD_enu_SendCmnd(ENTRY_MOOD);
      return SATE_OK;
     #elif LCD_U8_MODE == LCD_U8_MODE_4BIT
-    _delay_ms(35);
-    /*Function Set Command*/
-    LCD_enu_SendCmnd(0x20);
-    LCD_enu_SendCmnd(0x20);
-    LCD_enu_SendCmnd(0x80);
-    _delay_us(40);
-    /*Display On/Off Control*/
-    LCD_enu_SendCmnd(0x00);
-    LCD_enu_SendCmnd(0x50);
-    _delay_us(40);
-    /*Display Clear*/
-    LCD_enu_SendCmnd(0x00);
-    LCD_enu_SendCmnd(0x10);
-    _delay_ms(2);
-    /*Entry Mode Set*/
-    LCD_enu_SendCmnd(0x00);
-    LCD_enu_SendCmnd(0x60);
+    _delay_ms(20);
+    LCD_enu_SendCmnd(FourBIT_INIT1);
+    LCD_enu_SendCmnd(FourBIT_INIT2);
+    LCD_enu_SendCmnd(D4_D7_2LINES);
+    LCD_enu_SendCmnd(DIS_ON_CURSOR_ON_BLINKING);
+    LCD_enu_SendCmnd(ENTRY_MOOD);
+    LCD_enu_SendCmnd(DISPLAY_CLEAR);
     return SATE_OK;
     #endif
 }

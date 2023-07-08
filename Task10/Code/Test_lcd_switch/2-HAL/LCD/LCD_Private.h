@@ -11,11 +11,12 @@
 #define LCD_U8_MODE_4BIT         4
 
 #define FUN_SET_8BIT_2LINES_5X7      0x38
-
-
 #define DIS_ON_CURSOR_ON_BLINKING    0x0f
 #define DISPLAY_CLEAR                0x01
 #define ENTRY_MOOD                   0x06
+#define D4_D7_2LINES                 0x28
+#define FourBIT_INIT1                0x33
+#define FourBIT_INIT2                0x32
 
 #define LINE1                          0
 #define LINE2                          1
